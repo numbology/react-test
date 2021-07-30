@@ -8,8 +8,8 @@ export default function Post() {
 
     useEffect(() => {
         sanityClient
-            .fetch(
-                `* [_type == "post"]
+            .fetch(`
+                * [_type == "post"]
                 {
                     title,
                     slug,
